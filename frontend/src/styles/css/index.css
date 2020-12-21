@@ -598,7 +598,6 @@ footer {
       @media screen and (min-width: 999px) {
         footer .contact .spacer {
           display: block;
-          width: 40%;
           min-width: 31rem; } }
     footer .contact .socialMedia img {
       margin: 0 0.6rem;
