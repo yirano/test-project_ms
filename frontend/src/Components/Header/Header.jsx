@@ -4,6 +4,7 @@ import CallToAction from "./CallToAction"
 import Nav from "./Nav"
 import SubMenu from "./SubMenu"
 
+const baseURL = 'https://test-project-ms.herokuapp.com/'
 const initialState = {
     "brand": {
         "company_name": "",
@@ -37,7 +38,7 @@ const initialState = {
 const Header = () => {
     const [headerData, setHeaderData] = useState(initialState)
     useEffect(() => {
-        axios.get('http://localhost:8000/header')
+        axios.get("https://test-project-ms.herokuapp.com/header")
             .then(res => {
                 setHeaderData(res.data)
             }).catch(err => console.dir(err))

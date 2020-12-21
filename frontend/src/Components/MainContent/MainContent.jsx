@@ -5,7 +5,7 @@ import Card from "./Card"
 const MainContent = () => {
     const [mainData, setMainData] = useState([])
     useEffect(() => {
-        axios.get('http://localhost:8000/main_content')
+        axios.get("https://test-project-ms.herokuapp.com/main-content")
             .then(res => {
                 setMainData(res.data)
             }).catch(err => console.dir(err))

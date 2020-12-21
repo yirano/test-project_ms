@@ -29,7 +29,7 @@ const initialState = {
 const Footer = () => {
     const [footerData, setFooterData] = useState(initialState)
     useEffect(() => {
-        axios.get('http://localhost:8000/footer')
+        axios.get("https://test-project-ms.herokuapp.com/footer")
             .then(res => {
                 setFooterData(res.data)
             }).catch(err => console.dir(err))
