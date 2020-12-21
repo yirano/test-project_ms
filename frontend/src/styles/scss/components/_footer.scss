@@ -42,7 +42,7 @@ footer {
 			line-height: 1.9rem;
 			margin-left: 1rem;
 			a {
-				color: $black;
+				color: $gray;
 				@include linkHover($text-decoration: none, $letter-spacing: 0);
 			}
 			address {
