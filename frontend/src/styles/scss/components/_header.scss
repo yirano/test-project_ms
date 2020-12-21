@@ -50,6 +50,7 @@
 			justify-content: space-between;
 			padding: 0 3rem;
 			width: 100%;
+
 			@media screen and (min-width: 999px) {
 				width: 30%;
 				padding: 0;
@@ -59,21 +60,26 @@
 					display: none;
 				}
 			}
+
 			@media screen and (min-width: 1199px) {
 				justify-content: space-between;
 			}
+
 			.logoContainer {
 				text-decoration: none;
 				padding: 0;
+
 				.logo {
 					display: flex;
 					align-items: center;
+
 					.companyName {
 						margin-left: 0.3rem;
 						padding: 1rem;
 						letter-spacing: 0.07rem;
 						font-weight: 300;
 						line-height: 1.4rem;
+
 						p {
 							text-transform: uppercase;
 							font-size: 0.8rem;
@@ -95,10 +101,18 @@
 			animation: showMenu 300ms forwards;
 			width: 100%;
 
+			&.hideMenu {
+				overflow: hidden;
+				animation: hideMenu 300ms forwards;
+			}
+
 			@media screen and (min-width: 999px) {
 				flex-direction: row;
 				animation: none 300ms linear;
 				text-align: right;
+				&.hideMenu {
+					animation: none;
+				}
 			}
 
 			.menuLinks {
@@ -108,12 +122,14 @@
 				width: 96%;
 				justify-content: flex-end;
 				align-items: center;
+
 				a {
 					text-transform: uppercase;
 					text-decoration: none;
 					width: max-content;
 					@include linkHover($font-weight: 300);
 				}
+
 				@media screen and (min-width: 999px) {
 					justify-content: flex-end;
 					max-width: 70rem;
@@ -124,11 +140,13 @@
 					}
 				}
 			}
+
 			.menuActions {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
+
 				button {
 					@include buttons($width: 9.9, $height: 2.5, $background: $white, $color: $blue);
 
@@ -149,6 +167,9 @@
 						z-index: 999;
 						margin-left: -2.1rem;
 						margin-top: 0.8rem;
+						&:hover {
+							cursor: pointer;
+						}
 					}
 
 					.toggleSearch {
@@ -200,11 +221,6 @@
 					}
 				}
 			}
-
-			&.hideMenu {
-				overflow: hidden;
-				animation: hideMenu 300ms forwards;
-			}
 		}
 	}
 
@@ -217,7 +233,6 @@
 		text-align: center;
 		height: 100%;
 		width: 100%;
-		line-height: 4.4rem;
 		font-weight: 300;
 		letter-spacing: 0.2rem;
 		padding: 0 2rem;
@@ -232,11 +247,11 @@
 
 		.ctaMessage {
 			padding: 1rem 0;
-			margin-top: -6rem;
+			// margin-top: -25vh;
 
 			h1 {
 				text-transform: uppercase;
-				font-size: 5vmin;
+				font-size: 3.4vmax;
 				line-height: 3.4rem;
 
 				span:last-of-type {
@@ -245,10 +260,10 @@
 			}
 
 			@media screen and (min-width: 768px) {
-				margin-top: -22px;
-				font-size: 2vmax;
+				margin-top: 6rem;
 				h1 {
-					line-height: 5.4rem;
+					font-size: 3vmax;
+					line-height: 4.9vmax;
 				}
 			}
 		}
@@ -273,13 +288,14 @@
 			button {
 				@include buttons(13.7, 3.7, $white, $blue);
 				@include borders($pixel: 3, $color: $bright-blue);
-
+				margin-bottom: 2rem;
 				&:hover {
 					@include hover($white, $blue);
 				}
 
 				@media screen and (min-width: 768px) {
 					margin-right: 2rem;
+					margin-bottom: 0;
 				}
 			}
 		}

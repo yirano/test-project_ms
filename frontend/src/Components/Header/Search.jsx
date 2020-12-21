@@ -6,21 +6,32 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons'
 const initialState = {
     search: ''
 }
+
 const Search = () => {
     const [searchOpen, setSearchOpen] = useState(false)
     const [formValue, setFormValue] = useState(initialState)
+
     const handleSearch = () => {
         setSearchOpen(!searchOpen)
         setFormValue(initialState)
     }
+
     const handleChange = e => {
         setFormValue({ [e.target.name]: e.target.value })
     }
+
     const handleSubmit = e => {
         e.preventDefault()
         console.log("Searching")
         setSearchOpen(!searchOpen)
     }
+
+    window.addEventListener('scroll', () => {
+        if (searchOpen) {
+            setSearchOpen(!searchOpen)
+        }
+    })
+
     return (
         <form className="search" autoComplete="off" onClick={() => !searchOpen ? handleSearch() : null} >
             <div className="toggleSearch">

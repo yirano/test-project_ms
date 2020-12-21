@@ -255,11 +255,16 @@ img {
       overflow: hidden;
       animation: showMenu 300ms forwards;
       width: 100%; }
+      .header .nav .menu.hideMenu {
+        overflow: hidden;
+        animation: hideMenu 300ms forwards; }
       @media screen and (min-width: 999px) {
         .header .nav .menu {
           flex-direction: row;
           animation: none 300ms linear;
-          text-align: right; } }
+          text-align: right; }
+          .header .nav .menu.hideMenu {
+            animation: none; } }
       .header .nav .menu .menuLinks {
         display: flex;
         flex-direction: column;
@@ -318,6 +323,8 @@ img {
             z-index: 999;
             margin-left: -2.1rem;
             margin-top: 0.8rem; }
+            .header .nav .menu .menuActions .search svg:hover {
+              cursor: pointer; }
           .header .nav .menu .menuActions .search .toggleSearch {
             display: flex; }
             .header .nav .menu .menuActions .search .toggleSearch input[type="text"] {
@@ -353,9 +360,6 @@ img {
                     border: 2px solid #fff; } }
               .header .nav .menu .menuActions .search .toggleSearch input[type="text"]:focus {
                 outline: none; }
-      .header .nav .menu.hideMenu {
-        overflow: hidden;
-        animation: hideMenu 300ms forwards; }
   .header .cta {
     display: flex;
     position: relative;
@@ -365,7 +369,6 @@ img {
     text-align: center;
     height: 100%;
     width: 100%;
-    line-height: 4.4rem;
     font-weight: 300;
     letter-spacing: 0.2rem;
     padding: 0 2rem; }
@@ -377,20 +380,19 @@ img {
         justify-content: center;
         padding: 2% 10rem 0; } }
     .header .cta .ctaMessage {
-      padding: 1rem 0;
-      margin-top: -6rem; }
+      padding: 1rem 0; }
       .header .cta .ctaMessage h1 {
         text-transform: uppercase;
-        font-size: 5vmin;
+        font-size: 3.4vmax;
         line-height: 3.4rem; }
         .header .cta .ctaMessage h1 span:last-of-type {
           font-weight: 700; }
       @media screen and (min-width: 768px) {
         .header .cta .ctaMessage {
-          margin-top: -22px;
-          font-size: 2vmax; }
+          margin-top: 6rem; }
           .header .cta .ctaMessage h1 {
-            line-height: 5.4rem; } }
+            font-size: 3vmax;
+            line-height: 4.9vmax; } }
     .header .cta .ctaLinks {
       display: flex;
       flex-direction: column;
@@ -423,7 +425,8 @@ img {
         border: 2px solid transparent;
         cursor: pointer;
         border: #47bffe solid 3px;
-        border-radius: 4px; }
+        border-radius: 4px;
+        margin-bottom: 2rem; }
         .header .cta .ctaLinks button:active, .header .cta .ctaLinks button:focus {
           outline: none; }
         .header .cta .ctaLinks button:hover {
@@ -431,7 +434,8 @@ img {
           color: #1793d4; }
         @media screen and (min-width: 768px) {
           .header .cta .ctaLinks button {
-            margin-right: 2rem; } }
+            margin-right: 2rem;
+            margin-bottom: 0; } }
   .header .subMenu {
     position: absolute;
     display: flex;
@@ -486,7 +490,7 @@ img {
 .mainContent {
   display: flex;
   flex-wrap: wrap;
-  min-height: 100vh;
+  height: 105vh;
   flex-direction: row;
   background: #ddecff;
   justify-content: space-around;
@@ -550,7 +554,7 @@ img {
         margin: 0rem; } }
   @media screen and (min-width: 1199px) {
     .mainContent {
-      padding: 6rem 5.5rem; }
+      padding: 6rem 5.5rem 7rem; }
       .mainContent .card {
         width: 29%;
         min-width: 14rem;
