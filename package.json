@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cd frontend && craco start",
+    "craco": "cd frontend && craco start",
+    "start": "cd backend && node server.js",
     "server": "json-server --watch ./backend/db.json --port 8000"
   },
   "repository": {
