@@ -4,7 +4,6 @@ import CallToAction from "./CallToAction"
 import Nav from "./Nav"
 import SubMenu from "./SubMenu"
 
-const baseURL = 'https://test-project-ms.herokuapp.com/'
 const initialState = {
     "brand": {
         "company_name": "",

@@ -7,7 +7,7 @@ const SubMenu = (props) => {
     return (
         <div className="subMenu">
             <div className="subMenuPrompt">
-                <FontAwesomeIcon icon={faUserCircle} size="3x" />
+                <FontAwesomeIcon icon={faUserCircle} size="3x" style={{ margin: '0.2rem 0 0.7rem' }} />
                 <p>{subMenu.question}</p>
             </div>
             <div className="subMenuLinks">

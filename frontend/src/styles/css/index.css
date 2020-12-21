@@ -336,7 +336,7 @@ img {
         text-transform: uppercase;
         font-size: 5vmin;
         line-height: 3.4rem; }
-        .header .cta .ctaMessage h1:last-child {
+        .header .cta .ctaMessage h1 span {
           font-weight: 700; }
       @media screen and (min-width: 768px) {
         .header .cta .ctaMessage {
@@ -401,9 +401,7 @@ img {
       .header .subMenu {
         height: 74px;
         flex-direction: row;
-        justify-content: flex-start; } }
-    @media (min-width: 999px) {
-      .header .subMenu {
+        justify-content: flex-start;
         padding-left: 9.55%; } }
     .header .subMenu .subMenuPrompt {
       display: flex;
@@ -417,10 +415,13 @@ img {
             margin-left: 1.7rem; } }
     .header .subMenu .subMenuLinks {
       display: flex;
+      padding: 0 1rem;
       text-align: center;
-      padding: 0 1rem; }
+      flex-direction: column; }
+      .header .subMenu .subMenuLinks .subMenuIcon {
+        display: none; }
       .header .subMenu .subMenuLinks a {
-        padding: 0.1;
+        padding: 0.7rem;
         font-size: 0.9rem; }
         .header .subMenu .subMenuLinks a:hover {
           text-decoration: none;

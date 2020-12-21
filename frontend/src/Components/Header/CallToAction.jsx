@@ -3,11 +3,12 @@ import React, { useState, useEffect } from 'react'
 const CallToAction = (props) => {
     const { cta } = props
     const msg = cta.message.split(/(?<=\,)/)
+    console.log(msg)
 
     return (
         <div className="cta">
             <div className="ctaMessage">
-                {msg.map(msg => <h1>{msg}</h1>)}
+                <h1>{msg}</h1>
             </div>
             <div className="ctaLinks">
                 <a href={cta.button.url}>
