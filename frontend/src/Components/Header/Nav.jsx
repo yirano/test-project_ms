@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPiedPiperSquare } from '@fortawesome/free-brands-svg-icons'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import Search from "./Search"
 
 const Nav = (props) => {
     const { menu, brand, navButton } = props
@@ -52,9 +52,7 @@ const Nav = (props) => {
                     <a href={navButton.url}>
                         <button>{navButton.text}</button>
                     </a>
-                    <div className="search">
-                        <FontAwesomeIcon icon={faSearch} size="lg" />
-                    </div>
+                    <Search />
                 </div>
             </div>
 

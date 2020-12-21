@@ -314,7 +314,47 @@ img {
             padding-left: 1.3rem;
             flex-direction: row; } }
         .header .nav .menu .menuActions .search {
-          margin: 1.3rem; }
+          margin: 1.3rem;
+          position: relative; }
+          .header .nav .menu .menuActions .search svg {
+            z-index: 999;
+            margin-left: -2.1rem;
+            margin-top: 0.8rem; }
+          .header .nav .menu .menuActions .search .toggleSearch {
+            display: flex; }
+            .header .nav .menu .menuActions .search .toggleSearch input[type="text"] {
+              width: 3rem;
+              height: 3rem;
+              background: transparent;
+              border: 2px solid #fff;
+              border-radius: 50px;
+              position: relative;
+              right: 0;
+              letter-spacing: 0.1rem;
+              color: transparent;
+              transition: width 200ms linear;
+              border: 2px solid #fff;
+              margin-left: -0.5rem; }
+              .header .nav .menu .menuActions .search .toggleSearch input[type="text"]::placeholder {
+                color: transparent; }
+              .header .nav .menu .menuActions .search .toggleSearch input[type="text"].openSearch {
+                padding: 1rem 4rem;
+                background: #152c44;
+                width: 50rem;
+                color: #fff;
+                z-index: 990;
+                border: none;
+                right: -0.8rem;
+                transition: width 200ms linear; }
+                .header .nav .menu .menuActions .search .toggleSearch input[type="text"].openSearch::placeholder {
+                  color: rgba(255, 255, 255, 0.432);
+                  font-style: italic; }
+                @media screen and (min-width: 769px) {
+                  .header .nav .menu .menuActions .search .toggleSearch input[type="text"].openSearch {
+                    right: 0;
+                    border: 2px solid #fff; } }
+              .header .nav .menu .menuActions .search .toggleSearch input[type="text"]:focus {
+                outline: none; }
       .header .nav .menu.hideMenu {
         overflow: hidden;
         animation: hideMenu 300ms forwards; }
