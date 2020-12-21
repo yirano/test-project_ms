@@ -24,10 +24,11 @@
 		flex-direction: column;
 		align-items: center;
 		background: $grayish-blue;
-		width: 92%;
+		width: 100%;
 		transition: padding 200ms linear;
 		z-index: 999;
 		@media screen and (min-width: 999px) {
+			width: 92%;
 			position: absolute;
 			background: transparent;
 			flex-direction: row;
