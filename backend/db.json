@@ -1,0 +1,138 @@
+{
+    "header": {
+        "brand": {
+            "company_name": "Pretend Company",
+            "secondary": "Consulting Group"
+        },
+        "menu": [
+            {
+                "url": "#",
+                "text": "Expertise"
+            },
+            {
+                "url": "#",
+                "text": "Events"
+            },
+            {
+                "url": "#",
+                "text": "About Us"
+            },
+            {
+                "url": "#",
+                "text": "Connect"
+            },
+            {
+                "url": "#",
+                "text": "Customer Stories"
+            }
+        ],
+        "nav_button": {
+            "url": "#",
+            "text": "Let's talk"
+        },
+        "cta": {
+            "message": "Creating clear direction, Intuitive Processes, and Engaged Teams.",
+            "button": {
+                "url": "#",
+                "text": "Get to know us"
+            },
+            "second": {
+                "text": "Ready to get started?"
+            },
+            "third": {
+                "text": "Contact us today.",
+                "url": "#"
+            }
+        },
+        "sub_menu": {
+            "question": "How can we help?",
+            "links": [
+                {
+                    "url": "#",
+                    "text": "I own a business."
+                },
+                {
+                    "url": "#",
+                    "text": "I manage or work on a team."
+                },
+                {
+                    "url": "#",
+                    "text": "I'm here to learn."
+                }
+            ]
+        }
+    },
+    "main_content": [
+        {   
+            "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "title": "See our Expertise",
+            "content": "Lorem ipsum imperdiet rhoncus at lectus ln felis labortis volutpat auctor quam. In lectus. Ut tincindunt pharetra nibh. Urna vitae. Ipsum mi. Vitae. Consectetur augue nec nisi a Quisque urna ac, elit. Amet fementum pharetra",
+            "button": {
+                "url": "#",
+                "text": "View our Services & Industries"
+            }
+        },
+        {
+            "image": "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "title": "Join our Events",
+            "content": "Lorem ipsum imperdiet rhoncus at lectus ln felis labortis volutpat auctor quam. In lectus. Ut tincindunt pharetra nibh. Urna vitae. Ipsum mi. Vitae. Consectetur augue nec nisi a Quisque urna ac, elit. Amet fementum pharetra",
+            "button": {
+                "url": "#",
+                "text": "Visit an Upcoming Event"
+            }
+        },
+        {
+            "image": "https://images.pexels.com/photos/3183127/pexels-photo-3183127.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "title": "View our Resources",
+            "content": "Lorem ipsum imperdiet rhoncus at lectus ln felis labortis volutpat auctor quam. In lectus. Ut tincindunt pharetra nibh. Urna vitae. Ipsum mi. Vitae. Consectetur augue nec nisi a Quisque urna ac, elit. Amet fementum pharetra",
+            "button": {
+                "url": "#",
+                "text": "Peruse our Free Resources"
+            }
+        }
+    ],
+    "footer": {
+        "contact": {
+            "phone": "555.555.5555",
+            "contact_form": {
+                "url": "#",
+                "link_text": "contact form",
+                "text": "Or send us an email using our"
+            },
+            "address": "1234 Address, Springfield, MO 65806",
+            "directions": {
+                "url": "#",
+                "link_text": "Get directions",
+                "text": "to our office."
+            },
+            "social_media": [
+                {"url": "#", "icon": "Facebook"},
+                {"url": "#", "icon": "Twitter"},
+                {"url": "#", "icon": "YouTube"}
+            ]
+        },
+        "copyright": {
+            "symbol": "©",
+            "text": "Pretend Company Consulting Group. All Rights Reserved.",
+            "link": [
+                {
+                    "url": "#",
+                    "link_text": "Privacy Policy"
+                },
+                {
+                    "url": "#",
+                    "link_text": "Terms & Conditions"
+                },
+                {
+                    "url": "#",
+                    "link_text": "Careers"
+                },
+                {
+                    "url": "#",
+                    "link_text": "Mostly Serious",
+                    "text": "Website crafted by"
+                }
+            ]
+        }
+    }
+}

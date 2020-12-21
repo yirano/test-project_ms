@@ -1,0 +1,27 @@
+@mixin buttons($width: 9, $height:0, $color:$white, $background: $blue, $text-transform: uppercase,$font-weight: 600, $letter-spacing: 0.1, $font-size: 0.8 ) {
+	width: $width+rem;
+	height: $height+rem;
+	color: $color;
+	background: $background;
+	text-transform: $text-transform;
+	font-weight: $font-weight;
+	letter-spacing: $letter-spacing + rem;
+	font-size: $font-size + rem;
+	border-radius: 4px;
+	border: 2px solid transparent;
+	cursor: pointer;
+	&:active,
+	&:focus {
+		outline: none;
+	}
+}
+
+@mixin borders($border: solid, $pixel:0, $radius: 4, $color: transparent) {
+	border: $color $border $pixel+px;
+	border-radius: $radius+px;
+}
+
+@mixin hover($background: inherit, $color: inherit) {
+	background: $background;
+	color: $color;
+}

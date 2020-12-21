@@ -1,0 +1,246 @@
+.header {
+	position: relative;
+	top: 0;
+	width: 100%;
+	max-height: 908px;
+	height: 100vh;
+	background: linear-gradient(0deg, $grayish-blue, rgba(18, 37, 52, 0.16)),
+		url('../../Assets/images/man-consulting.jpeg');
+	background-size: cover;
+	color: $white;
+
+	a {
+		color: $white;
+		padding: 1rem;
+		font-size: 0.8rem;
+		font-weight: 300;
+		letter-spacing: 0.06rem;
+	}
+
+	.nav {
+		display: flex;
+		position: fixed;
+		flex-direction: column;
+		align-items: center;
+		background: $grayish-blue;
+		width: 100%;
+		transition: padding 200ms linear;
+		z-index: 999;
+		@media screen and (min-width: 999px) {
+			position: absolute;
+			background: transparent;
+			flex-direction: row;
+			padding: 2.7rem 0rem 1.1rem;
+			margin: 0 6rem;
+			animation: none;
+			border-bottom: 1px solid $white;
+			width: stretch;
+		}
+		.logoMenuIcon {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			padding: 0 3rem;
+
+			@media screen and (min-width: 999px) {
+				width: 25%;
+				padding: 0;
+				.menuIcon {
+					display: none;
+				}
+			}
+
+			.logoContainer {
+				text-decoration: none;
+				padding: 0;
+				min-width: 17rem;
+				.logo {
+					display: flex;
+					align-items: center;
+					.companyName {
+						margin-left: 0.3rem;
+						padding: 1rem;
+						letter-spacing: 0.07rem;
+						font-weight: 300;
+						line-height: 1.4rem;
+						p {
+							text-transform: uppercase;
+							font-size: 0.8rem;
+							letter-spacing: 0.16rem;
+						}
+					}
+				}
+			}
+		}
+
+		.menu {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: flex-end;
+			text-align: center;
+			animation: showMenu 300ms forwards;
+			overflow: hidden;
+			@media screen and (min-width: 999px) {
+				flex-direction: row;
+				animation: none 300ms linear;
+			}
+			.menuLinks {
+				display: flex;
+				flex-direction: column;
+				margin: 1.6rem;
+				a {
+					text-transform: uppercase;
+					text-decoration: none;
+				}
+				@media screen and (min-width: 999px) {
+					flex-direction: row;
+					li {
+						padding: 1rem;
+					}
+				}
+			}
+			.menuActions {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				button {
+					@include buttons($width: 9.9, $height: 2.5, $background: $white, $color: $blue);
+					&:hover {
+						@include hover($blue, $white);
+					}
+				}
+				@media screen and (min-width: 768px) {
+					padding-left: 2rem;
+				}
+				@media screen and (min-width: 999px) {
+					flex-direction: row;
+				}
+				.search {
+					margin: 1.3rem;
+				}
+			}
+
+			&.hideMenu {
+				overflow: hidden;
+				animation: hideMenu 300ms forwards;
+			}
+		}
+	}
+
+	.cta {
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		height: 100%;
+		width: 100%;
+		line-height: 4.4rem;
+		font-weight: 300;
+		letter-spacing: 0.2rem;
+
+		@media screen and (min-width: 999px) {
+			height: 95%;
+			text-align: left;
+			align-items: flex-start;
+			justify-content: center;
+			padding: 10% 10rem 0;
+		}
+		.ctaMessage {
+			padding: 1rem 0;
+			margin-top: -6rem;
+			h1 {
+				text-transform: uppercase;
+				font-size: 3vmax;
+				line-height: 4.4rem;
+				
+				&:last-child {
+					font-weight: 700;
+				}
+			}
+
+			@media screen and (min-width: 768px) {
+				margin-top: -22px;
+			}
+		}
+		.ctaLinks {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			letter-spacing: 0.02rem;
+			font-size: 0.85rem;
+			@media screen and (min-width: 999px) {
+				flex-direction: row;
+				margin: 2rem 0;
+			}
+			a {
+				padding: 0;
+			}
+			button {
+				@include buttons(13.7, 3.7, $white, $blue);
+				@include borders($pixel: 3, $color: $bright-blue);
+				&:hover {
+					@include hover($white, $blue);
+				}
+				@media screen and (min-width: 768px) {
+					margin-right: 2rem;
+				}
+			}
+		}
+	}
+
+	.subMenu {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		bottom: 0;
+		width: 100%;
+		padding: 1rem 0;
+		background: rgba(21, 57, 94, 0.7);
+		line-height: 1.3rem;
+		padding-left: 0;
+		@media (min-width: 768px) {
+			height: 74px;
+			flex-direction: row;
+			justify-content: flex-start;
+		}
+		@media (min-width: 999px) {
+			padding-left: 9.55%;
+		}
+		.subMenuPrompt {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			@media (min-width: 768px) {
+				flex-direction: row;
+				margin-left: 0;
+				> * {
+					margin-left: 1.7rem;
+				}
+			}
+		}
+		.subMenuLinks {
+			display: flex;
+			text-align: center;
+			padding: 0 1rem;
+			a {
+				padding: 0.1;
+				font-size: 0.9rem;
+			}
+			@media (min-width: 768px) {
+				flex-direction: row;
+				a {
+					padding: 1rem;
+				}
+			}
+		}
+	}
+}

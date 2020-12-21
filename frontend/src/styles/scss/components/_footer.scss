@@ -1,0 +1,146 @@
+footer {
+	text-align: center;
+
+	.contact {
+		display: flex;
+		flex-direction: column;
+		background: $yellow;
+
+		> div {
+			padding: 3.6rem 2rem;
+		}
+		.phoneEmail {
+			background: $blue;
+			color: $white;
+			line-height: 2.7rem;
+			min-width: 20%;
+			padding: 4rem 3.28rem;
+			a {
+				color: $white;
+			}
+		}
+		.addressSocial {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			line-height: 1.9rem;
+			padding-right: 0;
+			a {
+				color: $black;
+			}
+			address {
+				margin-right: 1rem;
+				div {
+					display: flex;
+					flex-direction: column;
+				}
+			}
+		}
+		.spacer {
+			display: none;
+		}
+		.socialMedia {
+			img {
+				margin: 0 0.6rem;
+				width: 3rem;
+			}
+		}
+	}
+	.copyright {
+		display: flex;
+		flex-direction: column;
+		background: $blue;
+		color: $white;
+		font-size: 0.7rem;
+		padding: 1.9rem;
+		line-height: 1.3rem;
+		a {
+			color: $white;
+		}
+	}
+	@media screen and (min-width: 799px) {
+		.contact {
+			position: relative;
+			flex-direction: row;
+			.phoneEmail {
+				position: absolute;
+				height: 110%;
+				bottom: 0;
+				left: 7.2rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			.addressSocial {
+				align-items: center;
+				line-height: 2.5rem;
+				flex-direction: column;
+				width: 100%;
+				address {
+					div {
+						display: flex;
+						flex-direction: column;
+					}
+					h4 {
+						font-size: 2vw;
+					}
+				}
+			}
+			.spacer {
+				display: block;
+				width: 40%;
+				min-width: 31rem;
+			}
+		}
+		.copyright {
+			width: 100%;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			p {
+				font-size: 0.7rem;
+				font-weight: 300;
+				letter-spacing: 0.045rem;
+				&:not(:last-child) {
+					content: '';
+					&::after {
+						content: '';
+						display: inline;
+						padding: 0 0.7rem;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (min-width: 999px) {
+		.copyright {
+			flex-direction: row;
+			p {
+				&:not(:last-child) {
+					content: '';
+					&::after {
+						content: '|';
+						display: inline;
+						padding: 0 0.7rem;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (min-width: 1199px) {
+		.contact {
+			.addressSocial {
+				flex-direction: row;
+				address {
+					div {
+						display: flex;
+						flex-direction: row;
+					}
+					h4 {
+						font-size: 1.5rem;
+					}
+				}
+			}
+		}
+	}
+}

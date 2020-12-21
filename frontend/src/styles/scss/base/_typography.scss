@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'defaultFont';
+	src: url("https://fonts.googleapis.com/css?family=Open+Sans:300, 300italic, 400, 400italic, 700");
+}
+
+html {
+	font-family: 'defaultFont', sans-serif;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.3rem;
+}
+
+h4 {
+	font-size: 1.4rem;
+	letter-spacing: 0.03rem;
+}
+h5 {
+	font-size: 1.3rem;
+}
+
+body {
+	font-size: 16px;
+}
