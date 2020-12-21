@@ -516,7 +516,13 @@ footer {
     flex-direction: column;
     background: #f3eee5; }
     footer .contact > div {
-      padding: 3.6rem 2rem; }
+      padding: 1.4rem; }
+    @media screen and (min-width: 999px) {
+      footer .contact {
+        position: relative;
+        flex-direction: row; }
+        footer .contact > div {
+          padding: 3.6rem 2rem; } }
     footer .contact .phoneEmail {
       background: #1793d4;
       color: #fff;
@@ -532,12 +538,21 @@ footer {
         footer .contact .phoneEmail a:focus {
           font-style: italic;
           color: #fca656; }
+      @media screen and (min-width: 999px) {
+        footer .contact .phoneEmail {
+          position: absolute;
+          height: 110%;
+          bottom: 0;
+          left: 7.2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; } }
     footer .contact .addressSocial {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       line-height: 1.9rem;
-      padding-right: 0; }
+      margin-left: 1rem; }
       footer .contact .addressSocial a {
         color: #000; }
         footer .contact .addressSocial a:hover {
@@ -548,12 +563,43 @@ footer {
           font-style: italic;
           color: #fca656; }
       footer .contact .addressSocial address {
-        margin-right: 1rem; }
+        color: #707071;
+        margin: 1.3rem; }
+        footer .contact .addressSocial address h4 {
+          font-weight: 700; }
         footer .contact .addressSocial address div {
           display: flex;
           flex-direction: column; }
+      @media screen and (min-width: 768px) {
+        footer .contact .addressSocial {
+          align-items: center;
+          line-height: 2.5rem;
+          flex-direction: column;
+          width: 100%; }
+          footer .contact .addressSocial address {
+            margin: 0; }
+            footer .contact .addressSocial address div {
+              display: flex;
+              flex-direction: column; }
+            footer .contact .addressSocial address h4 {
+              font-size: 2vw; } }
+      @media screen and (min-width: 1300px) {
+        footer .contact .addressSocial {
+          flex-direction: row; }
+          footer .contact .addressSocial address {
+            margin-right: 3rem; }
+            footer .contact .addressSocial address div {
+              display: flex;
+              flex-direction: row; }
+            footer .contact .addressSocial address h4 {
+              font-size: 1.5rem; } }
     footer .contact .spacer {
       display: none; }
+      @media screen and (min-width: 999px) {
+        footer .contact .spacer {
+          display: block;
+          width: 40%;
+          min-width: 31rem; } }
     footer .contact .socialMedia img {
       margin: 0 0.6rem;
       width: 3rem; }
@@ -564,7 +610,10 @@ footer {
     color: #fff;
     font-size: 0.7rem;
     padding: 1.9rem;
-    line-height: 1.3rem; }
+    line-height: 1.3rem;
+    width: 100%;
+    justify-content: center;
+    text-align: center; }
     footer .copyright a {
       color: #fff; }
       footer .copyright a:hover {
@@ -574,61 +623,22 @@ footer {
       footer .copyright a:focus {
         font-style: italic;
         color: #fca656; }
-  @media screen and (min-width: 799px) {
-    footer .contact {
-      position: relative;
-      flex-direction: row; }
-      footer .contact .phoneEmail {
-        position: absolute;
-        height: 110%;
-        bottom: 0;
-        left: 7.2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center; }
-      footer .contact .addressSocial {
-        align-items: center;
-        line-height: 2.5rem;
-        flex-direction: column;
-        width: 100%; }
-        footer .contact .addressSocial address div {
-          display: flex;
-          flex-direction: column; }
-        footer .contact .addressSocial address h4 {
-          font-size: 2vw; }
-      footer .contact .spacer {
-        display: block;
-        width: 40%;
-        min-width: 31rem; }
-    footer .copyright {
-      width: 100%;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center; }
-      footer .copyright p {
-        font-size: 0.7rem;
-        font-weight: 300;
-        letter-spacing: 0.045rem; }
-        footer .copyright p:not(:last-child) {
-          content: ''; }
-          footer .copyright p:not(:last-child)::after {
-            content: '';
-            display: inline;
-            padding: 0 0.7rem; } }
-  @media screen and (min-width: 999px) {
-    footer .copyright {
-      flex-direction: row; }
+    footer .copyright p {
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.045rem; }
       footer .copyright p:not(:last-child) {
         content: ''; }
         footer .copyright p:not(:last-child)::after {
-          content: '|';
+          content: '';
           display: inline;
-          padding: 0 0.7rem; } }
-  @media screen and (min-width: 1199px) {
-    footer .contact .addressSocial {
-      flex-direction: row; }
-      footer .contact .addressSocial address div {
-        display: flex;
+          padding: 0 0.7rem; }
+    @media screen and (min-width: 999px) {
+      footer .copyright {
         flex-direction: row; }
-      footer .contact .addressSocial address h4 {
-        font-size: 1.5rem; } }
+        footer .copyright p:not(:last-child) {
+          content: ''; }
+          footer .copyright p:not(:last-child)::after {
+            content: '|';
+            display: inline;
+            padding: 0 0.7rem; } }
