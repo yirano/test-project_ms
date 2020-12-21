@@ -3,6 +3,23 @@ import Facebook from '../../Assets/images/facebook.svg'
 import Twitter from '../../Assets/images/twitter.svg'
 import YouTube from '../../Assets/images/youtube.svg'
 
+const initialState = {
+    "contact": {
+        "phone": "",
+        "contact_form": {
+            "url": "",
+            "link_text": "",
+            "text": ""
+        },
+        "address": "",
+        "directions": {
+            "url": "",
+            "link_text": "",
+            "text": ""
+        },
+        "social_media": []
+    },
+}
 const Contact = (props) => {
     const [contact, setContact] = useState(props.contact)
     const addr = contact.address.replace(/\,/, ',*').split('*')
@@ -17,7 +34,9 @@ const Contact = (props) => {
                 { ...props.contact.social_media, icon: YouTube }
             ]
         })
-    }, [])
+    }, [props])
+
+    console.log(contact)
 
     return (
         <div className="contact">
