@@ -32,4 +32,8 @@
 		letter-spacing: $letter-spacing+rem;
 		font-weight: $font-weight;
 	}
+	&:focus {
+		font-style: italic;
+		color: $orange;
+	}
 }

@@ -161,7 +161,7 @@ img {
   0% {
     height: 0px; }
   100% {
-    height: 100%; } }
+    height: 25rem; } }
 
 @keyframes hideMenu {
   0% {
@@ -194,7 +194,7 @@ img {
     position: fixed;
     flex-direction: column;
     align-items: center;
-    background: rgba(21, 44, 68, 0.78);
+    background: rgba(21, 44, 68, 0.9);
     width: 100%;
     transition: padding 200ms linear;
     z-index: 999; }
@@ -214,9 +214,10 @@ img {
       align-items: center;
       justify-content: space-between;
       padding: 0 3rem;
-      width: 40%; }
+      width: 100%; }
       @media screen and (min-width: 999px) {
         .header .nav .logoMenuIcon {
+          width: 40%;
           padding: 0; }
           .header .nav .logoMenuIcon .menuIcon {
             display: none; } }
@@ -246,12 +247,12 @@ img {
       text-align: center;
       overflow: hidden;
       animation: showMenu 300ms forwards;
-      width: 100%;
-      flex: 2 1; }
+      width: 100%; }
       @media screen and (min-width: 999px) {
         .header .nav .menu {
           flex-direction: row;
-          animation: none 300ms linear; } }
+          animation: none 300ms linear;
+          text-align: right; } }
       .header .nav .menu .menuLinks {
         display: flex;
         flex-direction: column;
@@ -259,18 +260,23 @@ img {
         width: 96%;
         justify-content: flex-end; }
         .header .nav .menu .menuLinks a {
-          width: 100%;
+          padding: 1rem;
           text-transform: uppercase;
           text-decoration: none;
           border-bottom: 1px solid transparent; }
           .header .nav .menu .menuLinks a:hover {
             text-decoration: underline;
             letter-spacing: 0.062rem;
-            font-weight: 400; }
+            font-weight: 300; }
+          .header .nav .menu .menuLinks a:focus {
+            font-style: italic;
+            color: #fca656; }
         @media screen and (min-width: 999px) {
           .header .nav .menu .menuLinks {
+            justify-content: space-evenly;
+            width: 60%;
             flex-direction: row; }
-            .header .nav .menu .menuLinks li {
+            .header .nav .menu .menuLinks a {
               padding: 1rem; } }
       .header .nav .menu .menuActions {
         display: flex;
@@ -314,7 +320,8 @@ img {
     width: 100%;
     line-height: 4.4rem;
     font-weight: 300;
-    letter-spacing: 0.2rem; }
+    letter-spacing: 0.2rem;
+    padding: 0 2rem; }
     @media screen and (min-width: 999px) {
       .header .cta {
         height: 95%;
@@ -327,13 +334,16 @@ img {
       margin-top: -6rem; }
       .header .cta .ctaMessage h1 {
         text-transform: uppercase;
-        font-size: 3vmax;
-        line-height: 4.4rem; }
+        font-size: 5vmin;
+        line-height: 3.4rem; }
         .header .cta .ctaMessage h1:last-child {
           font-weight: 700; }
       @media screen and (min-width: 768px) {
         .header .cta .ctaMessage {
-          margin-top: -22px; } }
+          margin-top: -22px;
+          font-size: 2vmax; }
+          .header .cta .ctaMessage h1 {
+            line-height: 5.4rem; } }
     .header .cta .ctaLinks {
       display: flex;
       flex-direction: column;
@@ -350,6 +360,9 @@ img {
           text-decoration: none;
           letter-spacing: 0.062rem;
           font-weight: 400; }
+        .header .cta .ctaLinks a:focus {
+          font-style: italic;
+          color: #fca656; }
       .header .cta .ctaLinks button {
         width: 13.7rem;
         height: 3.7rem;
@@ -413,6 +426,9 @@ img {
           text-decoration: none;
           letter-spacing: 0.062rem;
           font-weight: 400; }
+        .header .subMenu .subMenuLinks a:focus {
+          font-style: italic;
+          color: #fca656; }
       @media (min-width: 768px) {
         .header .subMenu .subMenuLinks {
           flex-direction: row; }
@@ -424,7 +440,7 @@ img {
   flex-wrap: wrap;
   min-height: 100vh;
   flex-direction: row;
-  background: #1793d420;
+  background: #ddecff;
   justify-content: space-around;
   align-items: center;
   padding: 4rem 0; }
@@ -512,6 +528,9 @@ footer {
           text-decoration: none;
           letter-spacing: 0rem;
           font-weight: 400; }
+        footer .contact .phoneEmail a:focus {
+          font-style: italic;
+          color: #fca656; }
     footer .contact .addressSocial {
       display: flex;
       flex-direction: row;
@@ -524,6 +543,9 @@ footer {
           text-decoration: none;
           letter-spacing: 0rem;
           font-weight: 400; }
+        footer .contact .addressSocial a:focus {
+          font-style: italic;
+          color: #fca656; }
       footer .contact .addressSocial address {
         margin-right: 1rem; }
         footer .contact .addressSocial address div {
@@ -548,6 +570,9 @@ footer {
         text-decoration: none;
         letter-spacing: 0.043rem;
         font-weight: 400; }
+      footer .copyright a:focus {
+        font-style: italic;
+        color: #fca656; }
   @media screen and (min-width: 799px) {
     footer .contact {
       position: relative;
