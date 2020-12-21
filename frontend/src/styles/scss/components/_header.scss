@@ -18,6 +18,10 @@
 		letter-spacing: 0.06rem;
 	}
 
+	/* -------------------------------------------------------------------------- */
+	/*                                Logo && Menu                                */
+	/* -------------------------------------------------------------------------- */
+
 	.nav {
 		display: flex;
 		position: fixed;
@@ -90,6 +94,10 @@
 			}
 		}
 
+		/* -------------------------------------------------------------------------- */
+		/*                                 Menu Links                                 */
+		/* -------------------------------------------------------------------------- */
+
 		.menu {
 			display: flex;
 			flex-direction: column;
@@ -159,6 +167,10 @@
 					flex-direction: row;
 				}
 
+				/* -------------------------------------------------------------------------- */
+				/*                            Search bar in Menu bar                           */
+				/* -------------------------------------------------------------------------- */
+
 				.search {
 					margin: 1.3rem;
 					position: relative;
@@ -224,6 +236,10 @@
 		}
 	}
 
+	/* -------------------------------------------------------------------------- */
+	/*                          Call to Action in header                          */
+	/* -------------------------------------------------------------------------- */
+
 	.cta {
 		display: flex;
 		position: relative;
@@ -247,7 +263,6 @@
 
 		.ctaMessage {
 			padding: 1rem 0;
-			// margin-top: -25vh;
 
 			h1 {
 				text-transform: uppercase;
@@ -301,6 +316,10 @@
 		}
 	}
 
+	/* -------------------------------------------------------------------------- */
+	/*                          "How can we help" prompt                         */
+	/* -------------------------------------------------------------------------- */
+
 	.subMenu {
 		position: absolute;
 		display: flex;
@@ -309,23 +328,30 @@
 		align-items: center;
 		bottom: 0;
 		width: 100%;
-		padding: 1rem 0;
+		// padding: 1rem 0;
 		background: rgba(21, 57, 94, 0.7);
 		line-height: 1.3rem;
-		padding-left: 0;
 
 		@media (min-width: 768px) {
 			height: 74px;
 			flex-direction: row;
 			justify-content: flex-start;
 			padding-left: 9.55%;
+			// padding: 1rem 0;
 		}
 
 		.subMenuPrompt {
 			display: flex;
 			align-items: center;
-			flex-direction: column;
+			flex-direction: row;
+			margin-left: -20px;
 
+			.subMenuIcon {
+				animation: pulse 1200ms infinite;
+				@media screen and (min-width: 999px) {
+					animation: none; // Disables the submenu icon pulse on desktop view.
+				}
+			}
 			@media (min-width: 768px) {
 				flex-direction: row;
 				margin-left: 0;
@@ -340,10 +366,15 @@
 			text-align: center;
 			flex-direction: column;
 
-			.subMenuIcon {
-				display: none;
+			&.showSubMenu {
+				height: 9rem;
+				overflow: hidden;
+				transition: height 200ms linear;
 			}
-
+			&.hideSubMenu {
+				height: 0.3rem;
+				transition: height 200ms linear;
+			}
 			a {
 				padding: 0.7rem;
 				font-size: 0.9rem;
@@ -355,6 +386,17 @@
 
 				a {
 					padding: 1rem;
+				}
+			}
+			@media screen and (min-width: 999px) {
+				/* -------------------------------------------------------------------------- */
+				/*                     Disables the SubMenu display toggle                    */
+				/* -------------------------------------------------------------------------- */
+				&.showSubMenu {
+					height: 3.2rem;
+				}
+				&.hideSubMenu {
+					height: 3.2rem;
 				}
 			}
 		}
