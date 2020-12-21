@@ -8,7 +8,11 @@ const CallToAction = (props) => {
     return (
         <div className="cta">
             <div className="ctaMessage">
-                <h1>{msg}</h1>
+                <h1>{msg.map(msg => {
+                    return (
+                        <><span>{msg}<br /></span></>
+                    )
+                })}</h1>
             </div>
             <div className="ctaLinks">
                 <a href={cta.button.url}>
