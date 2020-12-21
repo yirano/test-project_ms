@@ -186,7 +186,7 @@ img {
   .header a {
     color: #fff;
     padding: 1rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 300;
     letter-spacing: 0.06rem; }
   .header .nav {
@@ -196,18 +196,20 @@ img {
     align-items: center;
     background: rgba(21, 44, 68, 0.9);
     width: 100%;
-    transition: padding 200ms linear;
-    z-index: 999; }
+    transition: padding 200ms linear; }
     @media screen and (min-width: 999px) {
       .header .nav {
         width: 92%;
         position: absolute;
         background: transparent;
-        flex-direction: row;
-        padding: 2.7rem 0rem 1.1rem;
+        padding: 1rem 0rem 0.2rem;
         margin: auto;
         animation: none;
         border-bottom: 1px solid #fff; } }
+    @media screen and (min-width: 1199px) {
+      .header .nav {
+        padding: 2.7rem 0rem 1.1rem;
+        flex-direction: row; } }
     .header .nav .logoMenuIcon {
       display: flex;
       flex-direction: row;
@@ -217,14 +219,18 @@ img {
       width: 100%; }
       @media screen and (min-width: 999px) {
         .header .nav .logoMenuIcon {
-          width: 40%;
-          padding: 0; }
+          width: 30%;
+          padding: 0;
+          justify-content: center;
+          min-width: 18rem; }
           .header .nav .logoMenuIcon .menuIcon {
             display: none; } }
+      @media screen and (min-width: 1199px) {
+        .header .nav .logoMenuIcon {
+          justify-content: space-between; } }
       .header .nav .logoMenuIcon .logoContainer {
         text-decoration: none;
-        padding: 0;
-        min-width: 17rem; }
+        padding: 0; }
         .header .nav .logoMenuIcon .logoContainer .logo {
           display: flex;
           align-items: center; }
@@ -274,8 +280,9 @@ img {
         @media screen and (min-width: 999px) {
           .header .nav .menu .menuLinks {
             justify-content: space-evenly;
-            width: 60%;
-            flex-direction: row; }
+            width: 90%;
+            flex-direction: row;
+            margin: 0.2rem 0; }
             .header .nav .menu .menuLinks a {
               padding: 1rem; } }
       .header .nav .menu .menuActions {

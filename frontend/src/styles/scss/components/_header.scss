@@ -13,7 +13,7 @@
 	a {
 		color: $white;
 		padding: 1rem;
-		font-size: 0.8rem;
+		font-size: 0.9rem;
 		font-weight: 300;
 		letter-spacing: 0.06rem;
 	}
@@ -26,17 +26,19 @@
 		background: $menu-blue;
 		width: 100%;
 		transition: padding 200ms linear;
-		z-index: 999;
 
 		@media screen and (min-width: 999px) {
 			width: 92%;
 			position: absolute;
 			background: transparent;
-			flex-direction: row;
-			padding: 2.7rem 0rem 1.1rem;
+			padding: 1rem 0rem 0.2rem;
 			margin: auto;
 			animation: none;
 			border-bottom: 1px solid $white;
+		}
+		@media screen and (min-width: 1199px) {
+			padding: 2.7rem 0rem 1.1rem;
+			flex-direction: row;
 		}
 
 		.logoMenuIcon {
@@ -46,19 +48,21 @@
 			justify-content: space-between;
 			padding: 0 3rem;
 			width: 100%;
-			@media screen and (min-width: 768px) {
-			}
 			@media screen and (min-width: 999px) {
-				width: 40%;
+				width: 30%;
 				padding: 0;
+				justify-content: center;
+				min-width: 18rem;
 				.menuIcon {
 					display: none;
 				}
 			}
+			@media screen and (min-width: 1199px) {
+				justify-content: space-between;
+			}
 			.logoContainer {
 				text-decoration: none;
 				padding: 0;
-				min-width: 17rem;
 				.logo {
 					display: flex;
 					align-items: center;
@@ -88,6 +92,7 @@
 			overflow: hidden;
 			animation: showMenu 300ms forwards;
 			width: 100%;
+
 			@media screen and (min-width: 999px) {
 				flex-direction: row;
 				animation: none 300ms linear;
@@ -109,8 +114,9 @@
 				}
 				@media screen and (min-width: 999px) {
 					justify-content: space-evenly;
-					width: 60%;
+					width: 90%;
 					flex-direction: row;
+					margin: 0.2rem 0;
 					a {
 						padding: 1rem;
 					}
