@@ -36,7 +36,6 @@ const Contact = (props) => {
         })
     }, [props])
 
-    console.log(contact)
 
     return (
         <div className="contact">

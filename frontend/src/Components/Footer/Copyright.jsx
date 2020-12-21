@@ -2,7 +2,6 @@ import React from 'react'
 
 const Copyright = (props) => {
     const { copyright } = props
-    console.log(copyright)
     return (
         <div className="copyright">
             <p>
