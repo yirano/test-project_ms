@@ -1,4 +1,4 @@
-@mixin buttons($width: 9, $height:0, $color:$white, $background: $blue, $text-transform: uppercase,$font-weight: 600, $letter-spacing: 0.1, $font-size: 0.8 ) {
+@mixin buttons($width: 9,$height:0, $color:$white, $background: $blue, $text-transform: uppercase,$font-weight: 600, $letter-spacing: 0.1, $font-size: 0.8 ) {
 	width: $width+rem;
 	height: $height+rem;
 	color: $color;

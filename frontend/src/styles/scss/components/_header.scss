@@ -26,7 +26,7 @@
 		background: $menu-blue;
 		width: 100%;
 		transition: padding 200ms linear;
-
+		z-index: 999;
 		@media screen and (min-width: 999px) {
 			width: 92%;
 			position: absolute;
@@ -103,22 +103,23 @@
 				display: flex;
 				flex-direction: column;
 				margin: 1.6rem 0;
+				padding: 1rem;
 				width: 96%;
 				justify-content: flex-end;
+				align-items: center;
 				a {
-					padding: 1rem;
 					text-transform: uppercase;
 					text-decoration: none;
-					border-bottom: 1px solid transparent;
+					width: max-content;
 					@include linkHover($font-weight: 300);
 				}
 				@media screen and (min-width: 999px) {
 					justify-content: space-evenly;
-					width: 90%;
+					max-width: 70rem;
 					flex-direction: row;
 					margin: 0.2rem 0;
 					a {
-						padding: 1rem;
+						padding: 1rem 0;
 					}
 				}
 			}
@@ -127,7 +128,6 @@
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
-
 				button {
 					@include buttons($width: 9.9, $height: 2.5, $background: $white, $color: $blue);
 					&:hover {
@@ -135,7 +135,7 @@
 					}
 				}
 				@media screen and (min-width: 999px) {
-					padding-left: 2rem;
+					padding-left: 1.3rem;
 					flex-direction: row;
 				}
 				.search {

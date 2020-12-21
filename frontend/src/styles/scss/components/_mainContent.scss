@@ -22,12 +22,13 @@
 		.cardDesc {
 			padding: 1rem 1.3rem 0.7rem;
 			// height: auto;
+
 			h4 {
-				display: inline;
 				color: $blue;
 				text-transform: uppercase;
 				font-weight: 300;
-				&:last-of-type {
+				width: max-content;
+				span:last-of-type {
 					font-weight: 700;
 				}
 			}

@@ -9,9 +9,14 @@ const Card = (props) => {
                 <img src={data.image} />
             </div>
             <div className="cardDesc">
-                {cardTitle.map(title => <h4>{title}</h4>)}
+                <h4>{cardTitle.map(msg => {
+                    return (
+                        <><span>{msg}</span></>
+                    )
+                })}</h4>
                 <p>{data.content}</p>
             </div>
+
             <div className="cardButton">
                 <a href={data.button.url}>
                     <button>{data.button.text}</button>
