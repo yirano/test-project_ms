@@ -17,6 +17,7 @@ footer {
 			padding: 4rem 3.28rem;
 			a {
 				color: $white;
+				@include linkHover($text-decoration: none, $letter-spacing: 0);
 			}
 		}
 		.addressSocial {
@@ -27,6 +28,7 @@ footer {
 			padding-right: 0;
 			a {
 				color: $black;
+				@include linkHover($text-decoration: none, $letter-spacing: 0);
 			}
 			address {
 				margin-right: 1rem;
@@ -56,6 +58,7 @@ footer {
 		line-height: 1.3rem;
 		a {
 			color: $white;
+			@include linkHover($text-decoration: none, $letter-spacing: 0.043);
 		}
 	}
 	@media screen and (min-width: 799px) {

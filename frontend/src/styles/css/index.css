@@ -3,9 +3,7 @@
    License: none (public domain)
 */
 *,
-html,
-body,
-div {
+html {
   box-sizing: border-box; }
 
 html,
@@ -215,11 +213,10 @@ img {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      width: 100%;
-      padding: 0 3rem; }
+      padding: 0 3rem;
+      width: 40%; }
       @media screen and (min-width: 999px) {
         .header .nav .logoMenuIcon {
-          flex: 1;
           padding: 0; }
           .header .nav .logoMenuIcon .menuIcon {
             display: none; } }
@@ -243,12 +240,14 @@ img {
     .header .nav .menu {
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       align-items: center;
       justify-content: flex-end;
       text-align: center;
       overflow: hidden;
-      animation: showMenu 300ms forwards; }
+      animation: showMenu 300ms forwards;
+      width: 100%;
+      flex: 2 1; }
       @media screen and (min-width: 999px) {
         .header .nav .menu {
           flex-direction: row;
@@ -256,10 +255,18 @@ img {
       .header .nav .menu .menuLinks {
         display: flex;
         flex-direction: column;
-        margin: 1.6rem; }
+        margin: 1.6rem 0;
+        width: 96%;
+        justify-content: flex-end; }
         .header .nav .menu .menuLinks a {
+          width: 100%;
           text-transform: uppercase;
-          text-decoration: none; }
+          text-decoration: none;
+          border-bottom: 1px solid transparent; }
+          .header .nav .menu .menuLinks a:hover {
+            text-decoration: underline;
+            letter-spacing: 0.062rem;
+            font-weight: 400; }
         @media screen and (min-width: 999px) {
           .header .nav .menu .menuLinks {
             flex-direction: row; }
@@ -287,11 +294,9 @@ img {
           .header .nav .menu .menuActions button:hover {
             background: #1793d4;
             color: #fff; }
-        @media screen and (min-width: 768px) {
-          .header .nav .menu .menuActions {
-            padding-left: 2rem; } }
         @media screen and (min-width: 999px) {
           .header .nav .menu .menuActions {
+            padding-left: 2rem;
             flex-direction: row; } }
         .header .nav .menu .menuActions .search {
           margin: 1.3rem; }
@@ -341,6 +346,10 @@ img {
           margin: 2rem 0; } }
       .header .cta .ctaLinks a {
         padding: 0; }
+        .header .cta .ctaLinks a:hover {
+          text-decoration: none;
+          letter-spacing: 0.062rem;
+          font-weight: 400; }
       .header .cta .ctaLinks button {
         width: 13.7rem;
         height: 3.7rem;
@@ -400,6 +409,10 @@ img {
       .header .subMenu .subMenuLinks a {
         padding: 0.1;
         font-size: 0.9rem; }
+        .header .subMenu .subMenuLinks a:hover {
+          text-decoration: none;
+          letter-spacing: 0.062rem;
+          font-weight: 400; }
       @media (min-width: 768px) {
         .header .subMenu .subMenuLinks {
           flex-direction: row; }
@@ -495,6 +508,10 @@ footer {
       padding: 4rem 3.28rem; }
       footer .contact .phoneEmail a {
         color: #fff; }
+        footer .contact .phoneEmail a:hover {
+          text-decoration: none;
+          letter-spacing: 0rem;
+          font-weight: 400; }
     footer .contact .addressSocial {
       display: flex;
       flex-direction: row;
@@ -503,6 +520,10 @@ footer {
       padding-right: 0; }
       footer .contact .addressSocial a {
         color: #000; }
+        footer .contact .addressSocial a:hover {
+          text-decoration: none;
+          letter-spacing: 0rem;
+          font-weight: 400; }
       footer .contact .addressSocial address {
         margin-right: 1rem; }
         footer .contact .addressSocial address div {
@@ -523,6 +544,10 @@ footer {
     line-height: 1.3rem; }
     footer .copyright a {
       color: #fff; }
+      footer .copyright a:hover {
+        text-decoration: none;
+        letter-spacing: 0.043rem;
+        font-weight: 400; }
   @media screen and (min-width: 799px) {
     footer .contact {
       position: relative;

@@ -25,3 +25,11 @@
 	background: $background;
 	color: $color;
 }
+
+@mixin linkHover($text-decoration: underline, $font-weight: 400, $letter-spacing: 0.062) {
+	&:hover {
+		text-decoration: $text-decoration;
+		letter-spacing: $letter-spacing+rem;
+		font-weight: $font-weight;
+	}
+}
