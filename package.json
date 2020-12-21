@@ -7,7 +7,9 @@
     "craco": "cd frontend && craco start",
     "build": "cd frontend && craco build",
     "start": "cd backend && node server.js",
-    "server": "json-server --watch ./backend/db.json --port 8000"
+    "server": "json-server --watch ./backend/db.json --port 8000",
+    "scss": "node-sass --watch frontend/src/styles/scss/index.scss -o frontend/src/styles/css/"
+
   },
   "repository": {
     "type": "git",

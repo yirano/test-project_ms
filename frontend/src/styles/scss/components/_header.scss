@@ -1,8 +1,9 @@
 .header {
 	position: relative;
+	display: flex;
+	justify-content: center;
 	top: 0;
 	width: 100%;
-	max-height: 908px;
 	height: 100vh;
 	background: linear-gradient(0deg, $grayish-blue, rgba(18, 37, 52, 0.16)),
 		url('../../Assets/images/man-consulting.jpeg');
@@ -23,7 +24,7 @@
 		flex-direction: column;
 		align-items: center;
 		background: $grayish-blue;
-		width: 100%;
+		width: 92%;
 		transition: padding 200ms linear;
 		z-index: 999;
 		@media screen and (min-width: 999px) {
@@ -31,10 +32,11 @@
 			background: transparent;
 			flex-direction: row;
 			padding: 2.7rem 0rem 1.1rem;
-			margin: 0 6rem;
+			// margin: 0 6rem;
+			margin: auto;
 			animation: none;
 			border-bottom: 1px solid $white;
-			width: stretch;
+			// width: stretch;
 		}
 		.logoMenuIcon {
 			display: flex;
@@ -45,7 +47,8 @@
 			padding: 0 3rem;
 
 			@media screen and (min-width: 999px) {
-				width: 25%;
+				// width: 25%;
+				flex: 1;
 				padding: 0;
 				.menuIcon {
 					display: none;
@@ -82,8 +85,8 @@
 			align-items: center;
 			justify-content: flex-end;
 			text-align: center;
-			animation: showMenu 300ms forwards;
 			overflow: hidden;
+			animation: showMenu 300ms forwards;
 			@media screen and (min-width: 999px) {
 				flex-direction: row;
 				animation: none 300ms linear;
@@ -159,7 +162,7 @@
 				text-transform: uppercase;
 				font-size: 3vmax;
 				line-height: 4.4rem;
-				
+
 				&:last-child {
 					font-weight: 700;
 				}
