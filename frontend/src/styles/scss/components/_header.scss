@@ -27,6 +27,7 @@
 		width: 100%;
 		transition: padding 200ms linear;
 		z-index: 999;
+
 		@media screen and (min-width: 999px) {
 			width: 92%;
 			position: absolute;
@@ -36,6 +37,7 @@
 			animation: none;
 			border-bottom: 1px solid $white;
 		}
+
 		@media screen and (min-width: 1199px) {
 			padding: 2.7rem 0rem 1.1rem;
 			flex-direction: row;
@@ -102,7 +104,6 @@
 			.menuLinks {
 				display: flex;
 				flex-direction: column;
-				margin: 1.6rem 0;
 				padding: 1rem;
 				width: 96%;
 				justify-content: flex-end;
@@ -114,12 +115,12 @@
 					@include linkHover($font-weight: 300);
 				}
 				@media screen and (min-width: 999px) {
-					justify-content: space-evenly;
+					justify-content: flex-end;
 					max-width: 70rem;
 					flex-direction: row;
 					margin: 0.2rem 0;
 					a {
-						padding: 1rem 0;
+						padding: 1rem 2vw;
 					}
 				}
 			}
@@ -130,26 +131,29 @@
 				align-items: center;
 				button {
 					@include buttons($width: 9.9, $height: 2.5, $background: $white, $color: $blue);
+
 					&:hover {
 						@include hover($blue, $white);
 					}
 				}
+
 				@media screen and (min-width: 999px) {
-					padding-left: 1.3rem;
 					flex-direction: row;
 				}
+
 				.search {
 					margin: 1.3rem;
 					position: relative;
+
 					svg {
 						z-index: 999;
 						margin-left: -2.1rem;
 						margin-top: 0.8rem;
-						// margin-right: 1rem;
 					}
 
 					.toggleSearch {
 						display: flex;
+
 						input[type="text"] {
 							width: 3rem;
 							height: 3rem;
@@ -163,6 +167,7 @@
 							transition: width 200ms linear;
 							border: 2px solid $white;
 							margin-left: -0.5rem;
+
 							&::placeholder {
 								color: transparent;
 							}
@@ -176,15 +181,18 @@
 								border: none;
 								right: -0.8rem;
 								transition: width 200ms linear;
+
 								&::placeholder {
 									color: rgba(255, 255, 255, 0.432);
 									font-style: italic;
 								}
-								@media screen and (min-width: 769px) {
+
+								@media screen and (min-width: 768px) {
 									right: 0;
 									border: 2px solid $white;
 								}
 							}
+
 							&:focus {
 								outline: none;
 							}
@@ -213,6 +221,7 @@
 		font-weight: 300;
 		letter-spacing: 0.2rem;
 		padding: 0 2rem;
+
 		@media screen and (min-width: 999px) {
 			height: 95%;
 			text-align: left;
@@ -224,10 +233,12 @@
 		.ctaMessage {
 			padding: 1rem 0;
 			margin-top: -6rem;
+
 			h1 {
 				text-transform: uppercase;
 				font-size: 5vmin;
 				line-height: 3.4rem;
+
 				span:last-of-type {
 					font-weight: 700;
 				}
@@ -241,26 +252,32 @@
 				}
 			}
 		}
+
 		.ctaLinks {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			letter-spacing: 0.02rem;
 			font-size: 0.85rem;
+
 			@media screen and (min-width: 999px) {
 				flex-direction: row;
 				margin: 2rem 0;
 			}
+
 			a {
 				padding: 0;
 				@include linkHover($text-decoration: none);
 			}
+
 			button {
 				@include buttons(13.7, 3.7, $white, $blue);
 				@include borders($pixel: 3, $color: $bright-blue);
+
 				&:hover {
 					@include hover($white, $blue);
 				}
+
 				@media screen and (min-width: 768px) {
 					margin-right: 2rem;
 				}
@@ -280,16 +297,19 @@
 		background: rgba(21, 57, 94, 0.7);
 		line-height: 1.3rem;
 		padding-left: 0;
+
 		@media (min-width: 768px) {
 			height: 74px;
 			flex-direction: row;
 			justify-content: flex-start;
 			padding-left: 9.55%;
 		}
+
 		.subMenuPrompt {
 			display: flex;
 			align-items: center;
 			flex-direction: column;
+
 			@media (min-width: 768px) {
 				flex-direction: row;
 				margin-left: 0;
@@ -303,16 +323,20 @@
 			padding: 0 1rem;
 			text-align: center;
 			flex-direction: column;
+
 			.subMenuIcon {
 				display: none;
 			}
+
 			a {
 				padding: 0.7rem;
 				font-size: 0.9rem;
 				@include linkHover($text-decoration: none);
 			}
+
 			@media (min-width: 768px) {
 				flex-direction: row;
+
 				a {
 					padding: 1rem;
 				}
