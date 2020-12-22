@@ -95,9 +95,17 @@ footer {
 			}
 		}
 		.socialMedia {
+			&:hover {
+				cursor: pointer;
+			}
 			img {
 				margin: 0 0.6rem;
 				width: 3rem;
+				transition: transform 100ms linear;
+				&:hover {
+					transform: scale(1.1);
+					transition: transform 100ms linear;
+				}
 			}
 		}
 	}

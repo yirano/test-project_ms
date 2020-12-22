@@ -701,9 +701,15 @@ footer {
         footer .contact .spacer {
           display: block;
           min-width: 31rem; } }
+    footer .contact .socialMedia:hover {
+      cursor: pointer; }
     footer .contact .socialMedia img {
       margin: 0 0.6rem;
-      width: 3rem; }
+      width: 3rem;
+      transition: transform 100ms linear; }
+      footer .contact .socialMedia img:hover {
+        transform: scale(1.1);
+        transition: transform 100ms linear; }
   footer .copyright {
     display: flex;
     flex-direction: column;
