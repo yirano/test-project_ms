@@ -338,7 +338,6 @@
 		align-items: center;
 		bottom: 0;
 		width: 100%;
-		// padding: 1rem 0;
 		background: rgba(21, 57, 94, 0.7);
 		line-height: 1.3rem;
 		&:hover {
@@ -383,12 +382,12 @@
 
 			&.showSubMenu {
 				height: 9rem;
-				overflow: hidden;
 				transition: height 200ms linear;
 			}
 			&.hideSubMenu {
 				height: 0.3rem;
 				transition: height 200ms linear;
+				overflow: hidden;
 			}
 			a {
 				padding: 0.7rem;

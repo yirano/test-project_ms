@@ -508,11 +508,11 @@ img {
       flex-direction: column; }
       .header .subMenu .subMenuLinks.showSubMenu {
         height: 9rem;
-        overflow: hidden;
         transition: height 200ms linear; }
       .header .subMenu .subMenuLinks.hideSubMenu {
         height: 0.3rem;
-        transition: height 200ms linear; }
+        transition: height 200ms linear;
+        overflow: hidden; }
       .header .subMenu .subMenuLinks a {
         padding: 0.7rem;
         font-size: 0.9rem; }
