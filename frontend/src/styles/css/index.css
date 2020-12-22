@@ -400,7 +400,7 @@ img {
               .header .nav .menu .menuActions .search .toggleSearch input[type="text"]::placeholder {
                 color: transparent; }
               .header .nav .menu .menuActions .search .toggleSearch input[type="text"].openSearch {
-                padding: 1rem 4rem;
+                padding: 1rem 3em;
                 background: #152c44;
                 width: 50vw;
                 color: #fff;
