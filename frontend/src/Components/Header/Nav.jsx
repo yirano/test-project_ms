@@ -37,7 +37,11 @@ const Nav = (props) => {
         <div className="nav">
             <div className="logoMenuIcon">
                 <Logo />
-                <div className="menuIcon" onClick={() => setShowMenu(!showMenu)}>Menu</div>
+                <div className="menuIcon" onClick={() => setShowMenu(!showMenu)}>
+                    <span className={showMenu ? "mIconAnimate" : ""}></span>
+                    <span className={showMenu ? "mIconAnimate" : ""}></span>
+                    <span className={showMenu ? "mIconAnimate" : ""}></span>
+                </div>
             </div>
 
             <div className={showMenu ? "menu showMenu" : "menu "}>

@@ -60,6 +60,11 @@
 				padding: 0;
 				justify-content: center;
 				min-width: 18rem;
+
+				/* -------------------------------------------------------------------------- */
+				/*        BRING THIS ONE INTO MENU ICON TIFFANY WHAT IS WRONG WITH YOU        */
+				/* -------------------------------------------------------------------------- */
+
 				.menuIcon {
 					display: none;
 				}
@@ -97,6 +102,36 @@
 		/*                                 Nav Links                                 */
 		/* -------------------------------------------------------------------------- */
 		.menuIcon {
+			width: 2.4rem;
+			height: 2.2rem;
+			span {
+				position: relative;
+				display: block;
+				top: 12px;
+				width: 2.4rem;
+				padding: 0.4rem 0;
+				margin-top: -0.3rem;
+				border-bottom: 2px solid $white;
+				transform: rotate(-180deg);
+				transition: all 200ms ease-out;
+			}
+			span.mIconAnimate {
+				transition: all 200ms ease-out;
+				&:nth-child(1) {
+					top: 10px;
+					left: -4px;
+					transform: rotate(-45deg);
+				}
+				&:nth-child(2) {
+					display: none;
+				}
+				&:nth-child(3) {
+					top: 0px;
+					left: 5px;
+					transform: rotate(45deg);
+				}
+			}
+
 			&:hover {
 				cursor: pointer;
 			}
@@ -285,7 +320,7 @@
 				font-size: 4vmax;
 				line-height: 6vmax;
 
-				span:last-of-type {
+				span:la st-of-type {
 					font-weight: 700;
 				}
 			}
