@@ -13,6 +13,10 @@ const Nav = (props) => {
         }
     }, [])
 
+    window.addEventListener('scroll', () => {
+        setShowMenu(false)
+    })
+
     const Logo = () => {
         return (
             <a href="#" className="logoContainer">
@@ -27,6 +31,8 @@ const Nav = (props) => {
         )
     }
 
+
+
     return (
         <div className="nav">
             <div className="logoMenuIcon">
@@ -34,7 +40,7 @@ const Nav = (props) => {
                 <div className="menuIcon" onClick={() => setShowMenu(!showMenu)}>Menu</div>
             </div>
 
-            <div className={showMenu ? "menu showMenu" : "menu hideMenu"}>
+            <div className={showMenu ? "menu showMenu" : "menu "}>
                 <div className="menuLinks">
                     {menu.map(menuItem => {
                         return <a href={menuItem.url}>{menuItem.text}</a>
