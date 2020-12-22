@@ -34,7 +34,7 @@ const Nav = (props) => {
                 <div className="menuIcon" onClick={() => setShowMenu(!showMenu)}>Menu</div>
             </div>
 
-            <div className={showMenu ? "menu " : "menu hideMenu"}>
+            <div className={showMenu ? "menu showMenu" : "menu hideMenu"}>
                 <div className="menuLinks">
                     {menu.map(menuItem => {
                         return <a href={menuItem.url}>{menuItem.text}</a>
