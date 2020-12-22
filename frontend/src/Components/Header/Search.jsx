@@ -31,6 +31,11 @@ const Search = () => {
             setSearchOpen(!searchOpen)
         }
     })
+    window.addEventListener('resize', () => {
+        if (searchOpen) {
+            setSearchOpen(!searchOpen)
+        }
+    })
 
     return (
         <form className="search" autoComplete="off" onClick={() => !searchOpen ? handleSearch() : null} >

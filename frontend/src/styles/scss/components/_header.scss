@@ -42,7 +42,7 @@
 			border-bottom: 1px solid $white;
 		}
 
-		@media screen and (min-width: 1199px) {
+		@media screen and (min-width: 1241px) {
 			padding: 2.7rem 0rem 1.1rem;
 			flex-direction: row;
 		}
@@ -70,9 +70,8 @@
 			}
 
 			.logoContainer {
-				text-decoration: none;
 				padding: 0;
-
+				text-decoration: none;
 				.logo {
 					display: flex;
 					align-items: center;
@@ -150,12 +149,12 @@
 				}
 
 				@media screen and (min-width: 999px) {
-					justify-content: flex-end;
-					max-width: 70rem;
+					justify-content: space-around;
+					max-width: 55rem;
 					flex-direction: row;
 					margin: 0.2rem 0;
 					a {
-						padding: 1rem 2vw;
+						padding: 1rem;
 					}
 				}
 			}
@@ -203,7 +202,7 @@
 							background: transparent;
 							border: 2px solid $white;
 							border-radius: 50px;
-							position: relative;
+							// position: relative;
 							right: 0;
 							letter-spacing: 0.1rem;
 							color: transparent;
@@ -218,12 +217,13 @@
 							&.openSearch {
 								padding: 1rem 4rem;
 								background: $search-blue;
-								width: 70vw;
+								width: 50vw;
 								color: $white;
 								z-index: 990;
 								border: none;
 								right: -0.8rem;
 								transition: width 200ms linear;
+								border: 2px solid $white;
 
 								&::placeholder {
 									color: rgba(255, 255, 255, 0.432);

@@ -227,7 +227,7 @@ img {
         margin: auto;
         animation: none;
         border-bottom: 1px solid #fff; } }
-    @media screen and (min-width: 1199px) {
+    @media screen and (min-width: 1241px) {
       .header .nav {
         padding: 2.7rem 0rem 1.1rem;
         flex-direction: row; } }
@@ -250,8 +250,8 @@ img {
         .header .nav .logoMenuIcon {
           justify-content: space-between; } }
       .header .nav .logoMenuIcon .logoContainer {
-        text-decoration: none;
-        padding: 0; }
+        padding: 0;
+        text-decoration: none; }
         .header .nav .logoMenuIcon .logoContainer .logo {
           display: flex;
           align-items: center; }
@@ -311,12 +311,12 @@ img {
             color: #fca656; }
         @media screen and (min-width: 999px) {
           .header .nav .menu .menuLinks {
-            justify-content: flex-end;
-            max-width: 70rem;
+            justify-content: space-around;
+            max-width: 55rem;
             flex-direction: row;
             margin: 0.2rem 0; }
             .header .nav .menu .menuLinks a {
-              padding: 1rem 2vw; } }
+              padding: 1rem; } }
       .header .nav .menu .menuActions {
         display: flex;
         flex-direction: column;
@@ -362,7 +362,6 @@ img {
               background: transparent;
               border: 2px solid #fff;
               border-radius: 50px;
-              position: relative;
               right: 0;
               letter-spacing: 0.1rem;
               color: transparent;
@@ -374,12 +373,13 @@ img {
               .header .nav .menu .menuActions .search .toggleSearch input[type="text"].openSearch {
                 padding: 1rem 4rem;
                 background: #152c44;
-                width: 70vw;
+                width: 50vw;
                 color: #fff;
                 z-index: 990;
                 border: none;
                 right: -0.8rem;
-                transition: width 200ms linear; }
+                transition: width 200ms linear;
+                border: 2px solid #fff; }
                 .header .nav .menu .menuActions .search .toggleSearch input[type="text"].openSearch::placeholder {
                   color: rgba(255, 255, 255, 0.432);
                   font-style: italic; }
