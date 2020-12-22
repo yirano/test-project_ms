@@ -216,7 +216,7 @@ img {
     transition: padding 200ms linear;
     z-index: 999;
     /* -------------------------------------------------------------------------- */
-    /*                                 Menu Links                                 */
+    /*                                 Nav Links                                 */
     /* -------------------------------------------------------------------------- */ }
     @media screen and (min-width: 999px) {
       .header .nav {
@@ -412,8 +412,8 @@ img {
       padding: 1rem 0; }
       .header .cta .ctaMessage h1 {
         text-transform: uppercase;
-        font-size: 3.4vmax;
-        line-height: 3.4rem; }
+        font-size: 4vmax;
+        line-height: 2.8rem; }
         .header .cta .ctaMessage h1 span:last-of-type {
           font-weight: 700; }
       @media screen and (min-width: 768px) {
@@ -428,6 +428,8 @@ img {
       align-items: center;
       letter-spacing: 0.02rem;
       font-size: 0.85rem; }
+      .header .cta .ctaLinks p {
+        padding: 1rem; }
       @media screen and (min-width: 999px) {
         .header .cta .ctaLinks {
           flex-direction: row;
@@ -454,8 +456,7 @@ img {
         border: 2px solid transparent;
         cursor: pointer;
         border: #47bffe solid 3px;
-        border-radius: 4px;
-        margin-bottom: 2rem; }
+        border-radius: 4px; }
         .header .cta .ctaLinks button:active, .header .cta .ctaLinks button:focus {
           outline: none; }
         .header .cta .ctaLinks button:hover {
@@ -463,7 +464,6 @@ img {
           color: #1793d4; }
         @media screen and (min-width: 768px) {
           .header .cta .ctaLinks button {
-            margin-right: 2rem;
             margin-bottom: 0; } }
   .header .subMenu {
     position: absolute;

@@ -4,6 +4,7 @@ import CallToAction from "./CallToAction"
 import Nav from "./Nav"
 import SubMenu from "./SubMenu"
 
+// ! I would usually have my initialStates set up in the reducer file if I had Redux set up inside a reducer.
 const initialState = {
     "brand": {
         "company_name": "",
