@@ -19,7 +19,7 @@
 	}
 
 	/* -------------------------------------------------------------------------- */
-	/*                                Logo && Menu                                */
+	/*                                Logo && Menu bar                           */
 	/* -------------------------------------------------------------------------- */
 
 	.nav {
@@ -185,7 +185,6 @@
 				.search {
 					margin: 1.3rem;
 					position: relative;
-
 					svg {
 						z-index: 999;
 						margin-left: -2.1rem;
@@ -342,13 +341,18 @@
 		// padding: 1rem 0;
 		background: rgba(21, 57, 94, 0.7);
 		line-height: 1.3rem;
+		&:hover {
+			cursor: pointer;
+		}
 
 		@media (min-width: 768px) {
 			height: 74px;
 			flex-direction: row;
 			justify-content: flex-start;
 			padding-left: 9.55%;
-			// padding: 1rem 0;
+			&:hover {
+				cursor: auto;
+			}
 		}
 
 		.subMenuPrompt {

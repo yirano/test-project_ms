@@ -192,7 +192,7 @@ img {
   background-size: cover;
   color: #fff;
   /* -------------------------------------------------------------------------- */
-  /*                                Logo && Menu                                */
+  /*                                Logo && Menu bar                           */
   /* -------------------------------------------------------------------------- */
   /* -------------------------------------------------------------------------- */
   /*                          Call to Action in header                          */
@@ -475,12 +475,16 @@ img {
     width: 100%;
     background: rgba(21, 57, 94, 0.7);
     line-height: 1.3rem; }
+    .header .subMenu:hover {
+      cursor: pointer; }
     @media (min-width: 768px) {
       .header .subMenu {
         height: 74px;
         flex-direction: row;
         justify-content: flex-start;
-        padding-left: 9.55%; } }
+        padding-left: 9.55%; }
+        .header .subMenu:hover {
+          cursor: auto; } }
     .header .subMenu .subMenuPrompt {
       display: flex;
       align-items: center;
