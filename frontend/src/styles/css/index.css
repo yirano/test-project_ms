@@ -413,15 +413,19 @@ img {
       .header .cta .ctaMessage h1 {
         text-transform: uppercase;
         font-size: 4vmax;
-        line-height: 2.8rem; }
+        line-height: 6vmax; }
         .header .cta .ctaMessage h1 span:last-of-type {
           font-weight: 700; }
       @media screen and (min-width: 768px) {
         .header .cta .ctaMessage {
           margin-top: 6rem; }
           .header .cta .ctaMessage h1 {
-            font-size: 3vmax;
-            line-height: 4.9vmax; } }
+            font-size: 4vmax;
+            line-height: 6vmax; } }
+      @media screen and (min-width: 999px) {
+        .header .cta .ctaMessage h1 {
+          font-size: 3vmax;
+          line-height: 4.6vmax; } }
     .header .cta .ctaLinks {
       display: flex;
       flex-direction: column;
@@ -477,7 +481,7 @@ img {
     line-height: 1.3rem; }
     .header .subMenu:hover {
       cursor: pointer; }
-    @media (min-width: 768px) {
+    @media (min-width: 999px) {
       .header .subMenu {
         height: 74px;
         flex-direction: row;
@@ -495,7 +499,7 @@ img {
         @media screen and (min-width: 999px) {
           .header .subMenu .subMenuPrompt .subMenuIcon {
             animation: none; } }
-      @media (min-width: 768px) {
+      @media (min-width: 999px) {
         .header .subMenu .subMenuPrompt {
           flex-direction: row;
           margin-left: 0; }
@@ -523,12 +527,12 @@ img {
         .header .subMenu .subMenuLinks a:focus {
           font-style: italic;
           color: #fca656; }
-      @media (min-width: 768px) {
+      @media (min-width: 999px) {
         .header .subMenu .subMenuLinks {
           flex-direction: row; }
           .header .subMenu .subMenuLinks a {
             padding: 1rem; } }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 999px) {
         .header .subMenu .subMenuLinks {
           /* -------------------------------------------------------------------------- */
           /*                     Disables the SubMenu display toggle                    */

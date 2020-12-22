@@ -277,7 +277,7 @@
 			h1 {
 				text-transform: uppercase;
 				font-size: 4vmax;
-				line-height: 2.8rem;
+				line-height: 6vmax;
 
 				span:last-of-type {
 					font-weight: 700;
@@ -287,8 +287,15 @@
 			@media screen and (min-width: 768px) {
 				margin-top: 6rem;
 				h1 {
+					font-size: 4vmax;
+					line-height: 6vmax;
+				}
+			}
+
+			@media screen and (min-width: 999px) {
+				h1 {
 					font-size: 3vmax;
-					line-height: 4.9vmax;
+					line-height: 4.6vmax;
 				}
 			}
 		}
@@ -346,7 +353,7 @@
 			cursor: pointer;
 		}
 
-		@media (min-width: 768px) {
+		@media (min-width: 999px) {
 			height: 74px;
 			flex-direction: row;
 			justify-content: flex-start;
@@ -368,7 +375,7 @@
 					animation: none; // Disables the submenu icon pulse on desktop view.
 				}
 			}
-			@media (min-width: 768px) {
+			@media (min-width: 999px) {
 				flex-direction: row;
 				margin-left: 0;
 				> * {
@@ -397,14 +404,14 @@
 				@include linkHover($text-decoration: none);
 			}
 
-			@media (min-width: 768px) {
+			@media (min-width: 999px) {
 				flex-direction: row;
 
 				a {
 					padding: 1rem;
 				}
 			}
-			@media screen and (min-width: 768px) {
+			@media screen and (min-width: 999px) {
 				/* -------------------------------------------------------------------------- */
 				/*                     Disables the SubMenu display toggle                    */
 				/* -------------------------------------------------------------------------- */
