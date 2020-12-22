@@ -443,7 +443,7 @@ img {
         text-transform: uppercase;
         font-size: 4vmax;
         line-height: 6vmax; }
-        .header .cta .ctaMessage h1 span:la st-of-type {
+        .header .cta .ctaMessage h1 span:last-of-type {
           font-weight: 700; }
       @media screen and (min-width: 768px) {
         .header .cta .ctaMessage {
