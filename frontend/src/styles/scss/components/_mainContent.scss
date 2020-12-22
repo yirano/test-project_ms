@@ -1,7 +1,7 @@
 .mainContent {
 	display: flex;
 	flex-wrap: wrap;
-	height: 105vh;
+	min-height: 105vh; // Setting this in min-height allows for better responsive on smaller screens
 	flex-direction: row;
 	background: $light-blue;
 	justify-content: space-around;

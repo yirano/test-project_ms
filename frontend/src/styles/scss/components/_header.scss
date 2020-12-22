@@ -107,7 +107,6 @@
 			text-align: center;
 			overflow: hidden;
 			width: 100%;
-			height: 3rem;
 
 			&.hideMenu {
 				overflow: hidden;
@@ -220,7 +219,7 @@
 							&.openSearch {
 								padding: 1rem 4rem;
 								background: $search-blue;
-								width: 50rem;
+								width: 70vw;
 								color: $white;
 								z-index: 990;
 								border: none;

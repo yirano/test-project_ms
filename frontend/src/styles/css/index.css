@@ -273,8 +273,7 @@ img {
       justify-content: flex-end;
       text-align: center;
       overflow: hidden;
-      width: 100%;
-      height: 3rem; }
+      width: 100%; }
       .header .nav .menu.hideMenu {
         overflow: hidden;
         height: 0;
@@ -375,7 +374,7 @@ img {
               .header .nav .menu .menuActions .search .toggleSearch input[type="text"].openSearch {
                 padding: 1rem 4rem;
                 background: #152c44;
-                width: 50rem;
+                width: 70vw;
                 color: #fff;
                 z-index: 990;
                 border: none;
@@ -538,7 +537,7 @@ img {
 .mainContent {
   display: flex;
   flex-wrap: wrap;
-  height: 105vh;
+  min-height: 105vh;
   flex-direction: row;
   background: #ddecff;
   justify-content: space-around;
