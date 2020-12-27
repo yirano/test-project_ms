@@ -6,9 +6,10 @@
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack serve --watch --mode development --env development",
+    "watch": "watch 'npm run build' ./web",
     "scss": "node-sass --watch src/styles/scss/index.scss -o src/styles/css/",
     "start": "craco start",
-    "startdev": "nodemon devserver.js",
+    "startdev": "node devserver.js",
     "test": "craco test"
   },
   "author": "Tiffany Arellano",
@@ -24,7 +25,8 @@
     "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "^4.0.1"
+    "react-scripts": "^4.0.1",
+    "watch": "^1.0.2"
   },
   "browserslist": {
     "production": [

@@ -53,6 +53,8 @@ module.exports = {
 		extensions: [ "*", ".js", ".jsx" ]
 	},
 	devServer: {
+		publicPath: "/web",
+		contentBase: path.join(__dirname, "web"),
 		watchContentBase: true
 	}
 }
