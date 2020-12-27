@@ -1,7 +1,7 @@
 import React from "react"
-import Header from "./Header/Header"
-import MainContent from "./MainContent/MainContent"
-import Footer from "./Footer/Footer"
+import Header from "./Header/Header.jsx"
+import MainContent from "./MainContent/MainContent.jsx"
+import Footer from "./Footer/Footer.jsx"
 
 const App = () => {
 

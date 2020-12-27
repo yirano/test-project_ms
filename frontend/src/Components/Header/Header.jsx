@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import CallToAction from "./CallToAction"
-import Nav from "./Nav"
-import SubMenu from "./SubMenu"
+import CallToAction from "./CallToAction.jsx"
+import Nav from "./Nav.jsx"
+import SubMenu from "./SubMenu.jsx"
 
 // ! I would usually have my initialStates set up in the reducer file if I had Redux set up inside a reducer.
 const initialState = {

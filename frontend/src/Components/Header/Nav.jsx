@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPiedPiperSquare } from '@fortawesome/free-brands-svg-icons'
-import Search from "./Search"
+import Search from "./Search.jsx"
 
 const Nav = (props) => {
     const { menu, brand, navButton } = props

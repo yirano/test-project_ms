@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import Contact from "./Contact"
-import Copyright from "./Copyright"
+import Contact from "./Contact.jsx"
+import Copyright from "./Copyright.jsx"
 
 const initialState = {
     "contact": {
