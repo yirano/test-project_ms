@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --watch --mode development",
+    "scss": "node-sass --watch src/styles/scss/index.scss -o src/styles/css/",
     "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "scss": "node-sass --watch src/styles/scss/index.scss -o src/styles/css/"
+    "startdev": "node devserver.js",
+    "test": "craco test"
   },
   "author": "Tiffany Arellano",
   "license": "ISC",
@@ -35,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "node-php-awesome-server": "^1.3.1"
   }
 }
