@@ -8,6 +8,7 @@ module.exports = {
 		path: path.resolve("./web/res"),
 		filename: "[name].js"
 	},
+
 	// define babel loader
 	module: {
 		rules: [
@@ -31,16 +32,27 @@ module.exports = {
 				use: [ "style-loader", "css-loader" ]
 			},
 			{
-				test: /\.(png|gif|jpe?g)$/i,
+				test: /\.(png|gif|jpeg|svg)$/i,
 				use: [
 					{
 						loader: "file-loader"
 					}
 				]
+			},
+			{
+				test: /\.scss$/,
+				loaders: [ "style", "css", "sass?sourceMap" ]
+			},
+			{
+				test: /\.(png|jpg)$/,
+				loader: "url-loader"
 			}
 		]
 	},
 	resolve: {
 		extensions: [ "*", ".js", ".jsx" ]
+	},
+	devServer: {
+		watchContentBase: true
 	}
 }
